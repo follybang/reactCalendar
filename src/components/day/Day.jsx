@@ -14,7 +14,7 @@ const Day = ({ dataDay, dayEvents, fetchEvents }) => {
       {hours.map((hour) => {
         //getting all events from the day we will render
         const hourEvents = dayEvents.filter(
-          (event) => event.dateFrom.getHours() === hour
+          (event) => new Date(event.dateFrom).getHours() === hour
         );
 
         return (
@@ -34,7 +34,6 @@ const Day = ({ dataDay, dayEvents, fetchEvents }) => {
 Day.propTypes = {
   dataDay: PropTypes.number.isRequired,
   dayEvents: PropTypes.array.isRequired,
-  fetchEvents: PropTypes.func.isRequired,
 };
 
 export default Day;

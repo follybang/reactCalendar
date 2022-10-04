@@ -3,7 +3,6 @@ import Header from "./components/header/Header.jsx";
 import Calendar from "./components/calendar/Calendar.jsx";
 import Modal from "./components/modal/Modal.jsx";
 import moment from "moment/moment.js";
-import PropTypes from "prop-types";
 
 import { getWeekStartDate, generateWeekRange } from "../src/utils/dateUtils.js";
 import { getEvents, createEvent } from "./gateway/gateway.js";
@@ -99,9 +98,5 @@ class App extends Component {
     );
   }
 }
-
-App.propTypes = {
-  isModalOpen: PropTypes.bool,
-};
 
 export default App;

@@ -33,7 +33,6 @@ Event.propTypes = {
   title: PropTypes.string.isRequired,
   time: PropTypes.string.isRequired,
   id: PropTypes.string.isRequired,
-  fetchEvents: PropTypes.func.isRequired,
 };
 
 export default Event;
