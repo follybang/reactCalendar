@@ -3,10 +3,12 @@
   height: 60px;
   padding: 0 48px;
   align-items: center;
+  background: linear-gradient(#ffe4c4, #fff);
 }
 
 .create-event-btn {
   padding: 0 16px;
+  background: linear-gradient(#f0ffff, #fff);
 
   &__icon {
     margin-right: 8px;
@@ -17,6 +19,7 @@
   &__today-btn {
     margin-left: 32px;
     padding: 0 16px;
+    background: linear-gradient(#f0ffff, #fff);
   }
 
   &__nav-icon {
